@@ -30,8 +30,7 @@ packages = ["src"]
 allow-direct-references = true
 
 [tool.hatch.build]
-exclude = ["members/*"]  # Exclude the sub-package directories
-
+exclude = ["members/*"]  
 
 
 
