@@ -1,12 +1,12 @@
 [project]
 name = "bg-myproject"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = []
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
-bgtrainer = ["bgtrainer>=0.2.0"]
-bgoptimizer = ["bgoptimizer>=0.2.0"]
+bgtrainer = ["bgtrainer @ git+https://github.com/briangallagher/uvworkspacetest@main#subdirectory=members/bgtrainer"]
+bgoptimizer = ["bgoptimizer @ git+https://github.com/briangallagher/uvworkspacetest@main#subdirectory=members/bgoptimizer"]
 all = ["bgtrainer", "bgoptimizer"]
 
 [tool.uv.workspace]
@@ -31,6 +31,7 @@ allow-direct-references = true
 
 [tool.hatch.build]
 exclude = ["members/*"]  # Exclude the sub-package directories
+
 
 
 
